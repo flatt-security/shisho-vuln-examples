@@ -1,0 +1,11 @@
+{
+    "name": "shisho/vuln-examples",
+    "description": "demonstrates the feature to detect the known vulnerabilities in composer-based projects",
+    "type": "project",
+    "license": "Apache 2.0",
+    "require": {
+        "phpmailer/phpmailer": "6.4.1",
+        "league/commonmark": "0.18.2",
+        "dompdf/dompdf": "1.2"
+    }
+}

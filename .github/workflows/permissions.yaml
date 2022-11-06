@@ -1,0 +1,12 @@
+name: Permissions
+on:
+  issues:
+    types: [opened]
+
+permissions: write-all
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello World!"

